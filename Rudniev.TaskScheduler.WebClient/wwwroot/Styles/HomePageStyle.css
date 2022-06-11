@@ -1,0 +1,59 @@
+﻿#menuTitle_View {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+#menuItem_ViewAll {
+    position: absolute;
+    left: 30px;
+    top: 75px;
+}
+#menuItem_ViewWait {
+    position: absolute;
+    left: 30px;
+    top: 127px;
+}
+#menuItem_ViewInProgress {
+    position: absolute;
+    left: 30px;
+    top: 179px;
+}
+#menuItem_ViewCompleted {
+    position: absolute;
+    left: 30px;
+    top: 231px;
+}
+
+.TaskBlock {
+    position: absolute;
+    width: 840px;
+    min-height: 200px;
+    height: auto;
+    left: 40px;
+    top: 30px;
+    background: #DBD7D7;
+}
+.TaskTitle {
+    position: absolute;
+    left: 15px;
+    top: 0px;
+}
+.TaskDescription {
+    position: absolute;
+    width: 760px;
+    left: 25px;
+    top: 50px;
+}
+.TaskStatus {
+    position: absolute;
+    left: 25px;
+    top: 170px;
+}
+.TaskOptionsButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 805px;
+    top: 165px;
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+﻿body {
+    margin: 0;
+    background: #EFEFEF;
+}
+img {
+    background-size: cover;
+}
+a {
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+font {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.MainMenu {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+.SidebarMenu {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+#wrapper {
+    position: relative;
+    width: 1200px;
+    min-height: 100vh;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #DBD7D7;
+}
+#logoHeader {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 20px;
+    top: 9px;
+}
+#menuItem_ViewTasks {
+    position: absolute;
+    left: 295px;
+    top: 25px;
+}
+#menuItem_CreateTask {
+    position: absolute;
+    left: 435px;
+    top: 25px;
+}
+#userMenuButtonHeader {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1080px;
+    top: 28px;
+    cursor: pointer;
+}
+#userImgHeader {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1120px;
+    border-radius: 30px;
+    top: 10px;
+}
+
+#leftSidebar {
+    position: absolute;
+    width: 280px;
+    height: 1920px;
+    top: 80px;
+    background: #FDFAAA;
+}
+
+#content {
+    position: absolute;
+    width: 920px;
+    height: 1920px;
+    left: 280px;
+    top: 80px;
+    background: #FFFFFF;
+}
+
+#footer {
+}
