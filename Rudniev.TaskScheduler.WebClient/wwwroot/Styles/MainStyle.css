@@ -26,6 +26,32 @@ font {
     line-height: 24px;
     color: #000000;
 }
+label {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+input {
+    width: 260px;
+    height: 24px;
+}
+button {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+span {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
 
 .MainMenu {
     font-family: 'Inter';
