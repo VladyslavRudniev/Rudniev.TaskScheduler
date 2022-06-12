@@ -12,14 +12,14 @@
         <div id="header">
             <img id="logoHeader" src="~/images/logo.png" alt="some logotype" />
             <nav class="MainMenu">
-                <a id="menuItem_LogIn" asp-controller="Login" asp-action="Index">Log in</a>
-                <a id="menuItem_Registration" href="#">Registration</a>
+                <a id="menuItem_LogIn" href="#">Log in</a>
+                <a id="menuItem_Registration" asp-controller="Registration" asp-action="Index">Registration</a>
             </nav>
         </div>
         <div id="contentForRegPage">
-            <div id="RegistrationBlock">
-                <h2 class="RegistrationAndLogInTitle">Registration form:</h2>
-                <form asp-controller="Registration" asp-action="Registration" method="post">
+            <div id="LogInBlock">
+                <h2 class="RegistrationAndLogInTitle">LogIn form:</h2>
+                <form asp-controller="Login" asp-action="Login" method="post">
                     <div>
                         <label id="Label_Login">Login:</label>
                         <input id="Input_Login" asp-for="Login" />
@@ -30,17 +30,7 @@
                         <input id="Input_Password" asp-for="Password" />
                         <span id="SpanValid_Password" asp-validation-for="Password"></span>
                     </div>
-                    <div>
-                        <label id="Label_ConfirmPassword">Confirm<br>Password:</label>
-                        <input id="Input_ConfirmPassword" asp-for="ConfirmPassword" />
-                        <span id="SpanValid_ConfirmPassword" asp-validation-for="ConfirmPassword"></span>
-                    </div>
-                    <div>
-                        <label id="Label_Email">Email:</label>
-                        <input id="Input_Email" asp-for="Email" />
-                        <span id="SpanValid_Email" asp-validation-for="Email"></span>
-                    </div>
-                    <button id="Button_Registration" type="submit">Enter</button>
+                    <button id="Button_Login" type="submit">Enter</button>
                 </form>
             </div>
         </div>

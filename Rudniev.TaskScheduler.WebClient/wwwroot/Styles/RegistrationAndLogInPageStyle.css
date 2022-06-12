@@ -16,10 +16,18 @@
     top: 80px;
     background: #FFFFFF;
 }
-.RegistrationAndLogInBlock {
+#RegistrationBlock {
     position: absolute;
     width: 900px;
-    min-height: 300px;
+    height: 300px;
+    left: 150px;
+    top: 60px;
+    background: #D9D9D9;
+}
+#LogInBlock {
+    position: absolute;
+    width: 900px;
+    height: 200px;
     left: 150px;
     top: 60px;
     background: #D9D9D9;
@@ -74,31 +82,36 @@
 
 #SpanValid_Login {
     position: absolute;
-    left: 400px;
+    left: 410px;
     top: 54px;
-    width: 400px;
+    width: 460px;
 }
 #SpanValid_Password {
     position: absolute;
-    left: 400px;
+    left: 410px;
     top: 94px;
-    width: 400px;
+    width: 460px;
 }
 #SpanValid_ConfirmPassword {
     position: absolute;
-    left: 400px;
+    left: 410px;
     top: 154px;
-    width: 400px;
+    width: 460px;
 }
 #SpanValid_Email {
     position: absolute;
-    left: 400px;
+    left: 410px;
     top: 194px;
-    width: 400px;
+    width: 460px;
 }
 
 #Button_Registration {
     position: absolute;
     left: 80px;
     top: 250px;
+}
+#Button_Login {
+    position: absolute;
+    left: 80px;
+    top: 150px;
 }
