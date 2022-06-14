@@ -8,6 +8,14 @@
 </head>
 <body>
     <div id="wrapper">
+        <div id="userMenuBlock">
+            <font id="SignedInAsTxt">Signed in as<br><b>UserLogin</b></font>
+            <hr id="hrUserMenu" />
+            <nav class="userMenu">
+                <a id="userMenuItem_Profile" href="#">Your profile</a>
+                <a id="userMenuItem_SignOut" href="#">Sign out</a>
+            </nav>
+        </div>
         <div id="header">
             <img id="logoHeader" src="~/images/logo.png" alt="some logotype" />
             <nav class="MainMenu">
@@ -38,4 +46,16 @@
 
         </div>
     </div>
+    <script>
+        let popup = document.getElementById('userMenuBlock'),
+            popupToggle = document.getElementById('userMenuButtonHeader');
+        popupToggle.onclick = function () {
+            if (popup.style.display == "none") {
+                popup.style.display = "block";
+            }
+            else {
+                popup.style.display = "none";
+            }
+        }
+    </script>
 </body>
