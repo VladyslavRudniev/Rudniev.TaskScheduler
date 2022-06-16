@@ -1,4 +1,4 @@
-﻿@model RegistrationViewModel
+﻿@model LoginViewModel
 <!doctype html>
 <head>
     <link href="~/Styles/MainStyle.css" rel="stylesheet" />
@@ -19,7 +19,8 @@
         <div id="contentForRegPage">
             <div id="LogInBlock">
                 <h2 class="RegistrationAndLogInTitle">LogIn form:</h2>
-                <form asp-controller="Login" asp-action="Login" method="post">
+                <form asp-controller="Login" asp-action="Index" method="post">
+                    <input hidden asp-for="ReturnUrl" />
                     <div>
                         <label id="Label_Login">Login:</label>
                         <input id="Input_Login" asp-for="Login" />
