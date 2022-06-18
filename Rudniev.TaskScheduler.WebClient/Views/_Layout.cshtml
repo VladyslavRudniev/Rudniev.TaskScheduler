@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<head>
+    <link href="~/Styles/MainStyle.css" rel="stylesheet" />
+    <link href="~/Styles/HomePageStyle.css" rel="stylesheet" />
+    <title>Task Scheduler</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="userMenuBlock">
+            <font id="SignedInAsTxt">Signed in as<br><b>UserLogin</b></font>
+            <hr id="hrUserMenu" />
+            <nav class="userMenu">
+                <a id="userMenuItem_Profile" href="#">Your profile</a>
+                <a id="userMenuItem_SignOut" asp-controller="Login" asp-action="SignOut">Sign out</a>
+            </nav>
+        </div>
+        <div id="header">
+            <img id="logoHeader" src="~/Images/logo.png" alt="some logotype" />
+            <nav class="MainMenu">
+                <a id="menuItem_ViewTasks" href="#">View tasks</a>
+                <a id="menuItem_CreateTask" href="#">Create task</a>
+            </nav>
+            <img id="userMenuButtonHeader" src="~/Images/arrowDown.png" alt="user menu" />
+            <img id="userImgHeader" src="~/Images/userIcon.png" alt="user image" />
+        </div>
+        <script src="~/Scripts/Script.js"></script>
+        @RenderBody()
+    </div>
+</body>

@@ -2,7 +2,7 @@
 
 namespace Rudniev.TaskScheduler.WebClient.Models
 {
-    public class LoginViewModel
+    public class LoginModel
     {
         [Required(ErrorMessage = "Enter your Login")]
         public string Login { get; set; }

@@ -15,7 +15,7 @@ namespace Rudniev.TaskScheduler.WebClient.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Index(LoginViewModel model)
+        public async Task<IActionResult> Index(LoginModel model)
         {
             if (!ModelState.IsValid)
             {

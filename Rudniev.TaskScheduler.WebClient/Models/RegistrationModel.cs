@@ -2,7 +2,7 @@
 
 namespace Rudniev.TaskScheduler.WebClient.Models
 {
-    public class RegistrationViewModel
+    public class RegistrationModel
     {
         [Required(ErrorMessage = "Enter your Login")]
         [MinLength(4, ErrorMessage = "Minimal symbol must be 4")]

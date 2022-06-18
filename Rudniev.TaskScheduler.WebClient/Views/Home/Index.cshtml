@@ -1,61 +1,20 @@
-﻿<!doctype html>
-<head>
-    <link href="~/Styles/MainStyle.css" rel="stylesheet" />
-    <link href="~/Styles/HomePageStyle.css" rel="stylesheet" />
-    <title>Task Scheduler</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
-    <div id="wrapper">
-        <div id="userMenuBlock">
-            <font id="SignedInAsTxt">Signed in as<br><b>UserLogin</b></font>
-            <hr id="hrUserMenu" />
-            <nav class="userMenu">
-                <a id="userMenuItem_Profile" href="#">Your profile</a>
-                <a id="userMenuItem_SignOut" asp-controller="Login" asp-action="SignOut">Sign out</a>
-            </nav>
-        </div>
-        <div id="header">
-            <img id="logoHeader" src="~/images/logo.png" alt="some logotype" />
-            <nav class="MainMenu">
-                <a id="menuItem_ViewTasks" href="#">View tasks</a>
-                <a id="menuItem_CreateTask" href="#">Create task</a>
-            </nav>
-            <img id="userMenuButtonHeader" src="~/images/arrowDown.png" alt="user menu" />
-            <img id="userImgHeader" src="~/images/userIcon.png" alt="user image" />
-        </div>
-        <div id="leftSidebar">
-            <nav class="SidebarMenu">
-                <h2 id="menuTitle_View">View:</h2>
-                <a id="menuItem_ViewAll" href="#">All</a>
-                <a id="menuItem_ViewWait" href="#">Waiting for execution</a>
-                <a id="menuItem_ViewInProgress" href="#">In progress</a>
-                <a id="menuItem_ViewCompleted" href="#">Completed</a>
-            </nav>
-        </div>
-        <div id="content">
-            <div class="TaskBlock">
-                <h2 class="TaskTitle">Title</h2>
-                <font class="TaskDescription">Description... ... ...</font>
-                <font class="TaskStatus">Status: /_ _ _ _ _ _ _ _/</font>
-                <img class="TaskOptionsButton" src="~/images/thumbnail.png" alt="options" />
-            </div>
-        </div>
-        <div id="footer">
-
-        </div>
+﻿<div id="leftSidebar">
+    <nav class="SidebarMenu">
+        <h2 id="menuTitle_View">View:</h2>
+        <a id="menuItem_ViewAll" href="#">All</a>
+        <a id="menuItem_ViewWait" href="#">Waiting for execution</a>
+        <a id="menuItem_ViewInProgress" href="#">In progress</a>
+        <a id="menuItem_ViewCompleted" href="#">Completed</a>
+    </nav>
+</div>
+<div id="content">
+    <div class="TaskBlock">
+        <h2 class="TaskTitle">Title</h2>
+        <font class="TaskDescription">Description... ... ...</font>
+        <font class="TaskStatus">Status: /_ _ _ _ _ _ _ _/</font>
+        <img class="TaskOptionsButton" src="~/Images/thumbnail.png" alt="options" />
     </div>
-    <script>
-        let popup = document.getElementById('userMenuBlock'),
-            popupToggle = document.getElementById('userMenuButtonHeader');
-        popupToggle.onclick = function () {
-            if (popup.style.display == "none") {
-                popup.style.display = "block";
-            }
-            else {
-                popup.style.display = "none";
-            }
-        }
-    </script>
-</body>
+</div>
+<div id="footer">
+
+</div>

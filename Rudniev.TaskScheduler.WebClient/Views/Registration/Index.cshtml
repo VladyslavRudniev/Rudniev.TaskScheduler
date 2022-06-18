@@ -1,51 +1,31 @@
-﻿@model RegistrationViewModel
-<!doctype html>
-<head>
-    <link href="~/Styles/MainStyle.css" rel="stylesheet" />
-    <link href="~/Styles/RegistrationAndLogInPageStyle.css" rel="stylesheet" />
-    <title>Task Scheduler</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
-    <div id="wrapper">
-        <div id="header">
-            <img id="logoHeader" src="~/images/logo.png" alt="some logotype" />
-            <nav class="MainMenu">
-                <a id="menuItem_LogIn" asp-controller="Login" asp-action="Index">Log in</a>
-                <a id="menuItem_Registration" href="#">Registration</a>
-            </nav>
+﻿@{
+    ViewData["Title"] = "Registration page";
+    Layout = "~/Views/_LayoutLogIn.cshtml";
+}
+@model RegistrationModel
+<div id="RegistrationBlock">
+    <h2 class="RegistrationAndLogInTitle">Registration form:</h2>
+    <form asp-controller="Registration" asp-action="Registration" method="post">
+        <div>
+            <label id="Label_Login">Login:</label>
+            <input id="Input_Login" asp-for="Login" />
+            <span id="SpanValid_Login" asp-validation-for="Login"></span>
         </div>
-        <div id="contentForRegPage">
-            <div id="RegistrationBlock">
-                <h2 class="RegistrationAndLogInTitle">Registration form:</h2>
-                <form asp-controller="Registration" asp-action="Registration" method="post">
-                    <div>
-                        <label id="Label_Login">Login:</label>
-                        <input id="Input_Login" asp-for="Login" />
-                        <span id="SpanValid_Login" asp-validation-for="Login"></span>
-                    </div>
-                    <div>
-                        <label id="Label_Password">Password:</label>
-                        <input id="Input_Password" asp-for="Password" />
-                        <span id="SpanValid_Password" asp-validation-for="Password"></span>
-                    </div>
-                    <div>
-                        <label id="Label_ConfirmPassword">Confirm<br>Password:</label>
-                        <input id="Input_ConfirmPassword" asp-for="ConfirmPassword" />
-                        <span id="SpanValid_ConfirmPassword" asp-validation-for="ConfirmPassword"></span>
-                    </div>
-                    <div>
-                        <label id="Label_Email">Email:</label>
-                        <input id="Input_Email" asp-for="Email" />
-                        <span id="SpanValid_Email" asp-validation-for="Email"></span>
-                    </div>
-                    <button id="Button_Registration" type="submit">Enter</button>
-                </form>
-            </div>
+        <div>
+            <label id="Label_Password">Password:</label>
+            <input id="Input_Password" asp-for="Password" />
+            <span id="SpanValid_Password" asp-validation-for="Password"></span>
         </div>
-        <div id="footer">
-
+        <div>
+            <label id="Label_ConfirmPassword">Confirm<br>Password:</label>
+            <input id="Input_ConfirmPassword" asp-for="ConfirmPassword" />
+            <span id="SpanValid_ConfirmPassword" asp-validation-for="ConfirmPassword"></span>
         </div>
-    </div>
-</body>
+        <div>
+            <label id="Label_Email">Email:</label>
+            <input id="Input_Email" asp-for="Email" />
+            <span id="SpanValid_Email" asp-validation-for="Email"></span>
+        </div>
+        <button id="Button_Registration" type="submit">Enter</button>
+    </form>
+</div>

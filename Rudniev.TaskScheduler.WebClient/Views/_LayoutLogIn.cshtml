@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<head>
+    <link href="~/Styles/MainStyle.css" rel="stylesheet" />
+    <link href="~/Styles/RegistrationAndLogInPageStyle.css" rel="stylesheet" />
+    <title>@ViewData["Title"];</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img id="logoHeader" src="~/Images/logo.png" alt="some logotype" />
+            <nav class="MainMenu">
+                <a id="menuItem_LogIn" asp-controller="Login" asp-action="Index">Log in</a>
+                <a id="menuItem_Registration" href="#">Registration</a>
+            </nav>
+        </div>
+        <div id="contentForRegPage">
+            @RenderBody()
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
